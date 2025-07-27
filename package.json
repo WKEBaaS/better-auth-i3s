@@ -1,18 +1,26 @@
 {
   "name": "@youmin1017/better-auth-i3s",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/WKEBaaS/better-auth-i3s.git",
     "directory": "packages/better-auth"
   },
+  "scripts": {
+    "build": "tsc --project tsconfig.json"
+  },
+  "files": [
+    "dist"
+  ],
   "publishConfig": {
     "access": "public"
   },
   "main": "./dist/index.js",
-  "types": "index.ts",
   "dependencies": {
     "better-auth": "^1.3.2",
     "zod": "^4.0.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
   }
 }
